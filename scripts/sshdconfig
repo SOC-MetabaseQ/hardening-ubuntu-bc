@@ -63,9 +63,9 @@ function f_sshdconfig {
     echo "PermitEmptyPasswords no" >> "$SSHDCONF"
   fi
 
-  if ! grep -q "^AllowGroups" "$SSHDCONF" 2> /dev/null; then
-    echo "AllowGroups $SSH_GRPS" >> "$SSHDCONF"
-  fi
+#  if ! grep -q "^AllowGroups" "$SSHDCONF" 2> /dev/null; then
+#    echo "AllowGroups $SSH_GRPS" >> "$SSHDCONF"
+#  fi
 
   if ! grep -q "^MaxAuthTries" "$SSHDCONF" 2> /dev/null; then
     echo "MaxAuthTries 3" >> "$SSHDCONF"
