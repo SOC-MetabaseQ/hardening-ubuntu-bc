@@ -4,10 +4,11 @@ function f_issue {
   local TEXT
 
   for f in /etc/issue /etc/issue.net /etc/motd; do
-    TEXT="\\nBy accessing this system, you consent to the following conditions:
-- This system is for authorized use only.
-- Any or all uses of this system and all files on this system may be monitored.
-- Communications using, or data stored on, this system are not private.
+    TEXT="\\nAl acceder a este sistema, usted acepta las siguientes condiciones:
+
+- Este sistema es sólo para uso autorizado.
+- Cualquiera o todos los usos de este sistema y todos los archivos de este sistema pueden ser controlados.
+- Las comunicaciones o los datos almacenados en este sistema no son privados.
 "
     echo -e "$TEXT" > $f
   done
