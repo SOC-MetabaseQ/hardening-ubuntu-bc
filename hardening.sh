@@ -32,7 +32,7 @@ else
 	fi
 
 	#Ejecuto hardening centos
-
+	cd /usr/local/src
     	git clone https://github.com/SOC-MetabaseQ/hardening-rpm.git
 	cd hardening-rpm
 	bash rpm_hardening.sh
